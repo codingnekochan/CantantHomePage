@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { PaperProvider } from 'react-native-paper';
 import { useFonts } from 'expo-font'
 
 SplashScreen.preventAutoHideAsync()
@@ -34,12 +33,10 @@ const RootLayout = () => {
         <SafeAreaProvider>
             <GestureHandlerRootView style={{ flex: 1 }}>
                 <QueryClientProvider client={queryClient}>
-                    <PaperProvider>
                         <Stack>
                             <Stack.Screen name='(tabs)' options={{headerShown:false}} />
                             <Stack.Screen name="+not-found" options={{headerShown:false}} />
                         </Stack>
-                    </PaperProvider>
                 </QueryClientProvider>
             </GestureHandlerRootView>
         </SafeAreaProvider>

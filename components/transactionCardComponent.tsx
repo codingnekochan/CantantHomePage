@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import ReceiptIcon from '@/assets/images/invoice.svg'
 import ArrowUp from '@/assets/images/arrow-up.svg'
 import ArrowDown from '@/assets/images/arrow-down.svg'
@@ -26,7 +26,7 @@ const TransactionCardComponent = ({ product, customerName, date, transactionType
                     {transactionAmount}
                 </Text>
                 {transactionType === 'CREDIT' &&
-                    <View className='bg-[#F3F7F7] flex-row items-center justify-center px-2 py-[6px] rounded-[3px]'>
+                    <View className='bg-[#F3F7F7] flex-row items-center gap-x-2 justify-center px-2 py-[6px] rounded-[3px]'>
                         <ReceiptIcon />
                         <Text className='text-brand text-xs font-DMSans font-medium'>
                             {isFullyPaid ? 'Receipt' : 'Invoice'}
@@ -38,16 +38,16 @@ const TransactionCardComponent = ({ product, customerName, date, transactionType
     )
 }
 const styles = StyleSheet.create({
-    custom : {
-        paddingBottom :16,
-        paddingTop : 8,
+    custom: {
+        paddingBottom: 16,
+        paddingTop: 8,
         borderColor: '#EBF1F299'
 
     },
-    text : {
-        color:'#B2B2B299',
-        fontSize :11,
-        fontWeight :500,
+    text: {
+        color: '#B2B2B299',
+        fontSize: 11,
+        fontWeight: 500,
     }
 })
 export default TransactionCardComponent
