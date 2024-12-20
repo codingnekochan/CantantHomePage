@@ -1,16 +1,10 @@
 import React from 'react'
-import {
-    ImageBackground,
+import {  
     KeyboardAvoidingView,
-    Platform,
-    RefreshControl,
     ScrollView,
-    StatusBar,
-    StyleSheet,
-    Text,
     View,
 } from 'react-native';
-import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaView } from 'react-native-safe-area-context';
 const CustomLayout = ({ children,bgColor}: any) => {
     return (
         <>

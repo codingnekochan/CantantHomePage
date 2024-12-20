@@ -5,16 +5,12 @@ import ChevronDownM from '@/assets/images/chevrondown.svg'
 import ChevronUp from '@/assets/images/chevronup.svg'
 import AddButton from '@/assets/images/add.svg'
 import PouchIcon from '@/assets/images/pouch.svg'
-import CloseIcon from '@/assets/images/closebutton.svg'
 import Animated from 'react-native-reanimated'
 import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native'
-
-
 import TransactionCardComponent from '@/components/transactionCardComponent'
+
 const HomePresentation = ({
     isOpen,
-    isDrawerOpen,
-    setIsDrawerOpen,
     handleOpenBalance,
     animatedStyle,
     setIsVisibleTransaction,

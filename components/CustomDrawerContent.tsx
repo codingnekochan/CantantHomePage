@@ -1,6 +1,5 @@
-import { View, Text, Pressable, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Pressable, } from 'react-native';
 import { DrawerContentScrollView } from '@react-navigation/drawer';
-import { useRouter } from 'expo-router';
 import CustomerIcon from '@/assets/images/customer.svg'
 import TodoIcon from '@/assets/images/todo.svg'
 import InvoiceReceiptIcon from '@/assets/images/invoice-M.svg'
@@ -11,13 +10,23 @@ import ProblemIcon from '@/assets/images/problem.svg'
 import ChevronDown from '@/assets/images/chevron-blue.svg'
 import EllipseIcon from '@/assets/images/ellipse.svg'
 
-const DrawerItem = ({ customerIcon, invoiceIcon, todoIcon, teamIcon, shareIcon, tutorialIcon, problemIcon, label, onPress, comingSoon }: any) => (
+const DrawerItem = ({
+    customerIcon,
+    invoiceIcon,
+    todoIcon,
+    teamIcon,
+    shareIcon,
+    tutorialIcon,
+    problemIcon,
+    label,
+    onPress,
+    comingSoon }: any) => (
     <Pressable
         onPress={onPress}
         className="flex-row items-center  px-4 py-3 active:bg-gray-100"
     >
         <View className='w-6 items-center justify-center'>
-            {customerIcon && <CustomerIcon style={{width:24}} />}
+            {customerIcon && <CustomerIcon style={{ width: 24 }} />}
             {invoiceIcon && <InvoiceReceiptIcon style={{ width: 24 }} />}
             {todoIcon && <TodoIcon style={{ width: 24 }} />}
             {teamIcon && <TeamIcon style={{ width: 24 }} />}
@@ -45,14 +54,14 @@ export default function CustomDrawerContent(props: any) {
                         <View className="w-10 h-10 rounded-full bg-blue-600 justify-center items-center relative">
                             <Text className="text-white text-xl font-SpaceGrotesk">MS</Text>
                             <View className='absolute bottom-0 right-0'>
-                                <EllipseIcon/>
+                                <EllipseIcon />
                             </View>
                         </View>
                         <View className="mt-4">
                             <Text className="text-lg font-SpaceGrotesk font-medium">Masin Stitches</Text>
                             <Pressable className="flex-row items-center mt-1 gap-x-2">
                                 <Text className="text-brand text-xs font-SpaceGrotesk font-medium">Manage businesses</Text>
-                                <ChevronDown/>
+                                <ChevronDown />
                             </Pressable>
                         </View>
                     </View>

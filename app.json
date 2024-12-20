@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mimicodes.CantantHomePage"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mimicodes.CantantHomePage"
     },
     "web": {
       "bundler": "metro",
@@ -44,6 +46,12 @@
       "eas": {
         "projectId": "032e1189-13b3-41a5-9074-acd2edd862f2"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/032e1189-13b3-41a5-9074-acd2edd862f2"
     }
   }
 }

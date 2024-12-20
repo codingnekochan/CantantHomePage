@@ -3,7 +3,13 @@ import ReceiptIcon from '@/assets/images/invoice.svg'
 import ArrowUp from '@/assets/images/arrow-up.svg'
 import ArrowDown from '@/assets/images/arrow-down.svg'
 
-const TransactionCardComponent = ({ product, customerName, date, transactionType, transactionAmount, isFullyPaid }: any) => {
+const TransactionCardComponent = ({
+    product,
+    customerName,
+    date,
+    transactionType,
+    transactionAmount,
+    isFullyPaid }: any) => {
     return (
         <View className='transaction-card border border-[#EBF1F299] flex-row justify-between mb-2 px-4 pt-2 pb-4' style={styles.custom}>
             <View className={transactionType === 'CREDIT' ? '' : 'justify-between'}>

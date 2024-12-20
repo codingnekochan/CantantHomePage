@@ -77,8 +77,6 @@ const Home = () => {
   return (
     <CustomLayout bgColor='bg-brand'>
       <HomePresentation {...dataProps} />
-      {/* <DrawerNavigation /> */}
-
       <CustomModal
         isVisible={isVisibleTranasaction}
         closeModal={closeTransactionModal}
