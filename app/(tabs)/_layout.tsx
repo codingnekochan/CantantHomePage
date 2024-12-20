@@ -29,10 +29,10 @@ const TabsLayout = () => {
                 tabBarActiveTintColor: '#0898A0', // Active tab icon color
                 tabBarInactiveTintColor: '#787878', // Inactive tab icon color
             }}
-            initialRouteName='(home)'
+            initialRouteName='(home)/index'
         >
             <Tabs.Screen
-                name='(home)'
+                name='(home)/index'
                 options={{
                     headerShown: false,
                     title: 'Home',

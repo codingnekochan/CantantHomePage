@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
 import '../global.css'
-import { Stack } from 'expo-router'
 import * as SplashScreen from 'expo-splash-screen'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useFonts } from 'expo-font'
+import { Drawer } from 'expo-router/drawer';
+import CustomDrawerContent from '@/components/CustomDrawerContent';
 
 SplashScreen.preventAutoHideAsync()
 
@@ -33,10 +34,17 @@ const RootLayout = () => {
         <SafeAreaProvider>
             <GestureHandlerRootView style={{ flex: 1 }}>
                 <QueryClientProvider client={queryClient}>
-                        <Stack>
-                            <Stack.Screen name='(tabs)' options={{headerShown:false}} />
-                            <Stack.Screen name="+not-found" options={{headerShown:false}} />
-                        </Stack>
+                    <Drawer
+                        screenOptions={{
+                            drawerStyle: {
+                                width: '70%',
+                            },
+                            headerShown: false,
+                        }}
+                        drawerContent={(props) => <CustomDrawerContent {...props} />}
+                    >
+                        <Drawer.Screen name='(tabs)' />
+                    </Drawer>
                 </QueryClientProvider>
             </GestureHandlerRootView>
         </SafeAreaProvider>
