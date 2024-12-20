@@ -30,7 +30,7 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
    ```bash
    git clone git@github.com:codingnekochan/CantantHomePage.git
-   cd CantantApp
+   cd CantantHomePage
    ```
 2. Install dependencies:
    ```bash
