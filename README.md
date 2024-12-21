@@ -50,12 +50,14 @@ Ensure you have the following installed on your system:
 4. Scan the QR code in your terminal with the Expo Go app or open the project in an emulator.
 
 ### Alternative Method: Using Expo Go Without Cloning
+This method requires only Expo Go app and can be opened on any chosen device.
 
 1. Download and Open the Expo Go app on your mobile device.
 2. Enter the following Expo project link:
 
    ````
-   https://expo.dev/preview/update?message=app%20build&updateRuntimeVersion=1.0.0&createdAt=2024-12-21T10%3A57%3A37.752Z&slug=exp&projectId=032e1189-13b3-41a5-9074-acd2edd862f2&group=6a4f7154-3e48-47c6-a183-b001511d278c   ```
+   https://expo.dev/preview/update?message=app%20build&updateRuntimeVersion=1.0.0&createdAt=2024-12-21T10%3A57%3A37.752Z&slug=exp&projectId=032e1189-13b3-41a5-9074-acd2edd862f2&group=6a4f7154-3e48-47c6-a183-b001511d278c
+      ```
 
    ````
 
