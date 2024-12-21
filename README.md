@@ -55,11 +55,7 @@ This method requires only Expo Go app and can be opened on any chosen device.
 1. Download and Open the Expo Go app on your mobile device.
 2. Enter the following Expo project link:
 
-   ````
-   https://expo.dev/preview/update?message=app%20build&updateRuntimeVersion=1.0.0&createdAt=2024-12-21T10%3A57%3A37.752Z&slug=exp&projectId=032e1189-13b3-41a5-9074-acd2edd862f2&group=6a4f7154-3e48-47c6-a183-b001511d278c
-      ```
-
-   ````
+[CantantHomePage](https://expo.dev/preview/update?message=app%20build&updateRuntimeVersion=1.0.0&createdAt=2024-12-21T11%3A48%3A23.018Z&slug=exp&projectId=032e1189-13b3-41a5-9074-acd2edd862f2&group=0fd062ac-cb34-4f84-a788-53ad7e5eea95)
 
 3. The app will load directly from the Expo servers.
 
