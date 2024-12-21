@@ -7,6 +7,7 @@ import InactiveHomeIcon from '@/assets/images/inactivehome.svg'
 import InactiveInventoryIcon from '@/assets/images/inactive-inventory.svg'
 import InactiveTransactionIcon from '@/assets/images/inactive-transaction.svg'
 import InactiveReportIcon from '@/assets/images/inactive-report.svg'
+import { Platform } from 'react-native'
 
 
 const TabsLayout = () => {
@@ -20,6 +21,7 @@ const TabsLayout = () => {
                     borderTopWidth: 1,
                     borderTopColor: "#00000014",
                     paddingTop: 12,
+                    height: Platform.OS === 'android' ? 70 : 80
                 },
                 tabBarLabelStyle: {
                     fontSize: 12,

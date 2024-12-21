@@ -45,6 +45,7 @@ const RootLayout = () => {
                     >
                         <Drawer.Screen name='(tabs)' />
                     </Drawer>
+                    <StatusBar/>
                 </QueryClientProvider>
             </GestureHandlerRootView>
         </SafeAreaProvider>
